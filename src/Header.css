@@ -1,5 +1,5 @@
 button {
-  font-size: 2em;
+  font-size: 3em;
   margin-left: 10px;
   margin-top: 5px;
   background-color: Transparent;
@@ -7,18 +7,19 @@ button {
   border: none;
   cursor: pointer;
   overflow: hidden;
+  color: #061e78;
 }
 button:hover {
-  color: white;
+  color: #faa613;
 }
 
 div.nav-menu {
-  margin: 1%;
   display: flex;
   flex-direction: row;
   align-content: center;
   align-items: center;
   justify-content: space-between;
+  background-color: white;
 }
 
 div.inner-menu {
@@ -26,6 +27,7 @@ div.inner-menu {
   flex-direction: row;
   min-width: 300px;
   padding-left: 10px;
+  padding-right: 40px;
   align-items: center;
   justify-content: space-between;
 }

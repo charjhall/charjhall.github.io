@@ -18,9 +18,11 @@ h2 {
 }
 h1 {
   font-size: 6em;
+  color: #061e78;
 }
 h2 {
   font-size: 4em;
+  color: white;
 }
 .center {
   width: 70%;
@@ -35,13 +37,14 @@ h2 {
   width: 50%;
 }
 .parent {
-  background-color: rgb(218, 237, 255);
+  background-color: #fca233;
 }
 html {
-  background-color: rgb(218, 237, 255);
+  background-color: #fca233;
 }
 body {
   font-family: "Futura";
+  margin: 0px;
 }
 
 div.home-content {

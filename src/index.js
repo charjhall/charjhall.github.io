@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-import headshot from "./img/professional_headshot.jpeg";
+import headshot from "./img/professional_headshot.png";
 import Header from "./Header";
 
 class Home extends React.Component {
