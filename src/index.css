@@ -58,3 +58,8 @@ div.home-content {
 div.home-content-text {
   padding-right: 30px;
 }
+
+iframe {
+  width: 90%;
+  height: auto;
+}

@@ -9,11 +9,13 @@ export default class Header extends React.Component {
       <div class="nav-menu">
         <img src={logo} alt="Logo" class="logo" />
         <div class="inner-menu">
-          <Button onClick={() => this.props.onClick()}>Home</Button>
-          <Button onClick={() => this.props.onClick()}>Biography</Button>
-          <Button onClick={() => this.props.onClick()}>Contact</Button>
-          <Button onClick={() => this.props.onClick()}>Resume</Button>
-          <Button onClick={() => this.props.onClick()}>Sample Works</Button>
+          <Button onClick={() => this.props.onClick("Home")}>Home</Button>
+          <Button onClick={() => this.props.onClick("Bio")}>Bio</Button>
+          <Button onClick={() => this.props.onClick("Contact")}>Contact</Button>
+          <Button onClick={() => this.props.onClick("Resume")}>Resume</Button>
+          <Button onClick={() => this.props.onClick("Sample Works")}>
+            Sample Works
+          </Button>
         </div>
       </div>
     );

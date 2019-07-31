@@ -5,31 +5,32 @@ import * as serviceWorker from "./serviceWorker";
 import Header from "./Header";
 import Body from "./Body";
 
-class Home extends React.Component {
+class Index extends React.Component {
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
       pageName: "Home"
     };
   }
 
-  handleClick() {
-    alert("woah");
-    //alert(pageName);
-    //this.setState({ pageName: pageName });
+  handleClick(newPage) {
+    this.setState({
+      pageName: newPage
+    });
   }
 
   render() {
     return (
       <div class="parent">
-        <Header onClick={() => alert("woah")} />
+        <Header onClick={this.handleClick} />
         <Body pageName={this.state.pageName} />
       </div>
     );
   }
 }
 
-ReactDOM.render(<Home />, document.getElementById("root"));
+ReactDOM.render(<Index />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -1,6 +1,6 @@
 import React from "react";
 import headshot from "./img/professional_headshot.png";
-export default class Home extends React.Component {
+export default class HomePage extends React.Component {
   render() {
     return (
       <div class="home-content">
