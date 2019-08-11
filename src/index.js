@@ -4,7 +4,7 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import Header from "./Header";
 import Body from "./Body";
-
+//https://reactgo.com/deploy-react-app-github-pages/
 class Index extends React.Component {
   constructor(props) {
     super(props);
