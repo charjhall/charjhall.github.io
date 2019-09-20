@@ -9,6 +9,8 @@ export default class Contact extends React.Component {
         <a href="https://www.linkedin.com/in/charles-hall-74a73213a/">
           Linkedin
         </a>
+        <br />
+        <a href="https://github.com/charjhall">Github</a>
         <h2>Address: 337347 Georgia Tech Station, Atlanta, Ga, 30332</h2>
       </div>
     );

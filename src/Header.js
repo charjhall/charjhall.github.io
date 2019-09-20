@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "react-bootstrap/Button";
-import "./Header.css";
+import "./css/Header.css";
 import logo from "./img/logo.png";
 
 export default class Header extends React.Component {
@@ -13,9 +13,6 @@ export default class Header extends React.Component {
           <Button onClick={() => this.props.onClick("Bio")}>Bio</Button>
           <Button onClick={() => this.props.onClick("Contact")}>Contact</Button>
           <Button onClick={() => this.props.onClick("Resume")}>Resume</Button>
-          <Button onClick={() => this.props.onClick("Sample Works")}>
-            Sample Works
-          </Button>
         </div>
       </div>
     );
