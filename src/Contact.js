@@ -1,8 +1,10 @@
 import React from "react";
+import "./css/Contact.css";
+
 export default class Contact extends React.Component {
   render() {
     return (
-      <div>
+      <div class="home-content-text">
         <h1>Contact</h1>
         <h2>Phone: +1 678 588 6214</h2>
         <h2>Email: jackson.hall@gatech.edu</h2>

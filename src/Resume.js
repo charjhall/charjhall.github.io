@@ -18,7 +18,7 @@ export default class Resume extends React.Component {
             <div class="container">
               <div class="row">
                 <div class="col-sm-9 col-sm-push-3">
-                  <h1>Charles Hackson Hall</h1>
+                  <h1>Charles Jackson Hall</h1>
                   <h2>Programmer</h2>
                 </div>
               </div>
