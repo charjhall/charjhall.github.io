@@ -33,8 +33,8 @@ export default class Bio extends React.Component {
             hanging out with friends, volunteering with kids, and having deep
             conversations.
           </h2>
+          <img src={Guitar} alt="Guitar" class="center small" />
         </div>
-        <img src={Guitar} alt="Guitar" class="center small" />
       </div>
     );
   }
