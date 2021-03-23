@@ -3,7 +3,7 @@ import HomePage from "./HomePage";
 import Bio from "./Bio";
 import Contact from "./Contact";
 import Resume from "./Resume";
-import SampleWorks from "./SampleWorks";
+import MealPrep from "./MealPrep";
 
 export default class Body extends React.Component {
   render() {
@@ -15,8 +15,8 @@ export default class Body extends React.Component {
       return <Contact />;
     } else if (this.props.pageName === "Resume") {
       return <Resume />;
-    } else if (this.props.pageName === "Sample Works") {
-      return <SampleWorks />;
+    } else if (this.props.pageName === "Meal Prep") {
+      return <MealPrep />;
     }
   }
 }

@@ -13,6 +13,7 @@ export default class Header extends React.Component {
           <Button onClick={() => this.props.onClick("Bio")}>Bio</Button>
           <Button onClick={() => this.props.onClick("Contact")}>Contact</Button>
           <Button onClick={() => this.props.onClick("Resume")}>Resume</Button>
+          <Button onClick={() => this.props.onClick("Meal Prep")}>Meal Prep</Button>
         </div>
       </div>
     );
