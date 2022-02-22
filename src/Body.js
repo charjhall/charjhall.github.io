@@ -4,6 +4,7 @@ import Bio from "./Bio";
 import Contact from "./Contact";
 import Resume from "./Resume";
 import MealPrep from "./MealPrep";
+import TodoList from "./Components/TodoList";
 
 export default class Body extends React.Component {
   render() {
@@ -17,6 +18,8 @@ export default class Body extends React.Component {
       return <Resume />;
     } else if (this.props.pageName === "Meal Prep") {
       return <MealPrep />;
+    } else if (this.props.pageName === "Todo List") {
+      return <TodoList />
     }
   }
 }

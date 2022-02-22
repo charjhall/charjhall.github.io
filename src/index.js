@@ -4,6 +4,9 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import Header from "./Header";
 import Body from "./Body";
+import FireBase from "./Components/Firebase";
+import { v4 as uuid } from "uuid/";
+
 //https://reactgo.com/deploy-react-app-github-pages/
 class Index extends React.Component {
   constructor(props) {
@@ -20,11 +23,19 @@ class Index extends React.Component {
     });
   }
 
+  saveTodo = (input) => {
+    const saveToFirebase = FireBase.firestore();
+    saveToFirebase.collection("todos").add({
+      id: uuid(),
+      item: input
+    });
+  } 
+
   render() {
     return (
       <div class="parent">
         <Header onClick={this.handleClick} />
-        <Body pageName={this.state.pageName} />
+        <Body pageName={this.state.pageName} saveTodo={saveTodo} />
       </div>
     );
   }
