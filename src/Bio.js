@@ -3,17 +3,18 @@ import Guitar from "./img/guitar.JPG";
 import Fam from "./img/familyPicture.JPG";
 import Agile from "./img/agile.png";
 import Container from '@mui/material/Container';
-import Grid from '@mui/material/Grid';
-import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
+import "./css/Bio.css"
 
 export default class Bio extends React.Component {
   render() {
     return (
 
       <Container maxWidth="md">
-        <h1>Bio</h1>
         <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={2}>
+          <Box gridColumn="span 12">
+            <h1>Bio</h1>
+          </Box>
           <Box gridColumn="span 7">
               <h2>
                 I am from Covington, GA, and come from a crazy but incredible family
@@ -23,7 +24,7 @@ export default class Bio extends React.Component {
               </h2>
           </Box>
           <Box gridColumn="span 5">
-            <img src={Fam} alt="Family" class="center" />
+            <img src={Fam} alt="Family" />
           </Box>
           <Box gridColumn="span 7">
             <h2>

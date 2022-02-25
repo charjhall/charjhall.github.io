@@ -12,7 +12,7 @@ export default function Header(props) {
 
   return (
     <div class="nav-menu">
-      <img src={logo} alt="Logo" class="logo" />
+      <img src={logo} alt="Logo" style={{  height: "128px", width: "auto", padding: 0}} />
       <div class="inner-menu">
         <BottomNavigation
           onChange={(event, newValue) => {
