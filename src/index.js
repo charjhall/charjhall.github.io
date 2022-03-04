@@ -4,6 +4,27 @@ import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import Header from "./Header";
 import Body from "./Body";
+import Footer from "./Footer"
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#FCA233',
+      dark: '#061E78'
+    }
+  },
+  components: {
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          borderRadius: 12
+        }
+      }
+    }
+  }
+});
+
 //https://reactgo.com/deploy-react-app-github-pages/
 class Index extends React.Component {
   constructor(props) {
@@ -22,10 +43,13 @@ class Index extends React.Component {
 
   render() {
     return (
-      <div class="parent">
-        <Header onClick={this.handleClick} />
-        <Body pageName={this.state.pageName} />
-      </div>
+      <ThemeProvider theme={theme}>
+        <div class="parent">
+          <Header onClick={this.handleClick} />
+          <Body pageName={this.state.pageName} />
+          <Footer />
+        </div>
+      </ThemeProvider>
     );
   }
 }

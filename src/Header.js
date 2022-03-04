@@ -1,12 +1,18 @@
 import React from "react";
 import "./css/Header.css";
 import logo from "./img/logo.png";
-import { BottomNavigation, BottomNavigationAction } from '@mui/material';
+import { BottomNavigation } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import EmailIcon from '@mui/icons-material/Email';
 import ArticleIcon from '@mui/icons-material/Article';
 import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
+import { styled } from "@mui/material/styles";
+import MuiBottomNavigationAction from "@mui/material/BottomNavigationAction";
+
+const BottomNavigationAction = styled(MuiBottomNavigationAction)(`
+  color: #061E78
+  }
+`);
 
 export default function Header(props) {
 
@@ -21,7 +27,6 @@ export default function Header(props) {
         >
           <BottomNavigationAction value="Home" label="Home" icon={<HomeIcon />} />
           <BottomNavigationAction value="Bio" label="Bio" icon={<FavoriteIcon />} />
-          <BottomNavigationAction value="Contact" label="Contact" icon={<EmailIcon />} />
           <BottomNavigationAction value="Resume" label="Resume" icon={<ArticleIcon />} />
           <BottomNavigationAction value="Meal Prep" label="Meal Prep" icon={<RestaurantMenuIcon />} />
         </BottomNavigation>
