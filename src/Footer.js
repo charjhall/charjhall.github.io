@@ -1,17 +1,17 @@
 import React from "react";
 import "./css/Footer.css";
-import Email from "./img/email.png";
+import Email from "./img/new-email.png";
 import Linkedin from "./img/linkedin.png";
-import Github from "./img/github.png";
+import Github from "./img/github-square.png";
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 
 export default class Footer extends React.Component {
   render() {
     return (
-      <Container sx={{ backgroundColor: 'primary.dark' }}>
+      <Container>
         <Container maxWidth="md" sx={{ backgroundColor: 'primary.dark' }}>
-          <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)' }}>
+          <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', justifyContent: 'space-around' }}>
             <Box display={'flex'} justifyContent={'center'} sx={{ p: 2}}>
               <a href="mailto:jacksonhall333@gmail.com">
                 <img src={Email} alt="Email" class="center small" />

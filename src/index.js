@@ -22,6 +22,12 @@ const theme = createTheme({
         }
       }
     }
+  },
+  typography: {
+    fontFamily: '"Georgia"',
+    body1: {
+      fontSize: '24px'
+    }
   }
 });
 
@@ -31,7 +37,7 @@ class Index extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      pageName: "Home"
+      pageName: "Bio"
     };
   }
 
