@@ -1,13 +1,11 @@
 import React from "react";
 import Guitar from "./img/guitar.JPG";
 import Fam from "./img/familyPicture.png";
-import Agile from "./img/agile.png";
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import MatrixDodge from './img/matrix-dodge.gif'
 import "./css/Bio.css"
 import { Typography } from '@mui/material';
-import { margin } from "@mui/system";
 
 export default class Bio extends React.Component {
   render() {
