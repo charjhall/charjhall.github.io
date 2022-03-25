@@ -1,0 +1,16 @@
+h2 {
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  color: black;
+}

@@ -37,7 +37,7 @@ class Index extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
     this.state = {
-      pageName: "Home"
+      pageName: "Meal Prep"
     };
   }
 

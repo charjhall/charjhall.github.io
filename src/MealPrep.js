@@ -1,4 +1,10 @@
 import React from "react";
+import Recipe from "./components/Recipe";
+import Ingredient from "./components/Ingredient";
+import { Button } from "@mui/material";
+import "./css/MealPrep.css"
+import Container from '@mui/material/Container';
+
 
 export default function MealPrep() {
     const meals = {
@@ -114,25 +120,26 @@ export default function MealPrep() {
     }
 
     const [selectedMeals, setSelectedMeals] = React.useState({});
+    
 
       return (
-        <div>
-          <p>Meal Prep</p>
+        <Container maxWidth="md">
+          <h2>Meal Prep</h2>
           <ul>
             {Object.keys(meals).map(((meal, index) => {
-                        return <li key={index} onClick={()=>{
-                            let newSelectedMeals = selectedMeals;
-                            newSelectedMeals[meal] = meals[meal]
-                            setSelectedMeals(newSelectedMeals);
-                            console.log(selectedMeals)
-                        }}>
-                            <input type="checkbox" id="cb"/>
-                            <label>{meal}</label>
-                        </li>
+                        return Recipe(meal, index, meals, selectedMeals, setSelectedMeals)
                     }))
             }
           </ul>
-        </div>
+          <h2>Ingredients</h2>
+          <ul>
+          {Object.keys(selectedMeals).map(((meal, index) => {
+                        return Ingredient(meal)
+                    }))
+            }
+          </ul>
+          <Button onClick={()=>{console.log(selectedMeals)}}>Check State</Button>
+        </Container>
       );
     
   }
