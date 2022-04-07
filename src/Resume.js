@@ -1,5 +1,5 @@
 import React from "react";
-import "./css/Resume.css";
+// import "./css/Resume.css";
 
 export default class Resume extends React.Component {
   render() {
